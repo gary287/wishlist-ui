@@ -1,7 +1,7 @@
 import Model, { attr, belongsTo } from '@ember-data/model';
 
 export default class ItemModel extends Model {
-  @belongsTo('wishlist');
+  @belongsTo('wishlist') wishlist;
   @attr db_id;
   @attr title;
   @attr url;
